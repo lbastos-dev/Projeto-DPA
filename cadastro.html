@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Perfil</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1>Complete seu Cadastro</h1>
+
+    <form id="formPerfil">
+        <p><input type="text" id="nome" placeholder="Nome Completo" required></p>
+        <p><input type="date" id="nascimento" required></p>
+        <p><input type="text" id="cidade" placeholder="Cidade" required></p>
+        <p><input type="text" id="estado" placeholder="Estado" required></p>
+
+        <p>
+            <label>Áreas de Interesse (3 a 5):</label>
+            <input type="text" id="interesse1" placeholder="Interesse 1" required>
+            <input type="text" id="interesse2" placeholder="Interesse 2" required>
+            <input type="text" id="interesse3" placeholder="Interesse 3" required>
+            <input type="text" id="interesse4" placeholder="Interesse 4 (opcional)">
+            <input type="text" id="interesse5" placeholder="Interesse 5 (opcional)">
+        </p>
+
+        <button type="submit">Salvar Perfil</button>
+    </form>
+
+    <script src="firebaseConfig.js" type="module"></script>
+    <script src="cadastro.js" type="module"></script>
+</body>
+</html>
